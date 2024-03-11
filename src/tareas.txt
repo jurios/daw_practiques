@@ -1,0 +1,9 @@
+Completar el ejercicio de introducción a HTML
+Leer el capítulo sobre CSS del libro de diseño web
+Resolver los ejercicios de JavaScript básico
+Preparar una presentación sobre el modelo cliente-servidor
+Investigar las diferencias entre SQL y NoSQL
+Crear una pequeña aplicación usando Flask
+Estudiar el ciclo de vida del desarrollo de software
+Realizar un ejercicio de diagramas de clase UML
+Implementar CRUD en una aplicación web simple
