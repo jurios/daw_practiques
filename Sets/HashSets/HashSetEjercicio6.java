@@ -1,4 +1,4 @@
-package src.Sets.HashSets;
+package Sets.HashSets;
 
 
 import java.util.ArrayList;
@@ -14,15 +14,15 @@ import java.util.List;
  */
 
 /**
- * Unión de conjuntos
+ * Diferencia de Conjuntos
  * 
  * Escribe un programa que dados dos conjuntos de números enteros 
- * encuentre su unión, es decir, todos los elementos que están en cualquiera 
- * de los dos conjuntos.
+ * encuentre la diferencia del primer conjunto respecto al segundo, es decir, 
+ * los elementos que están en el primer conjunto y no en el segundo.
  * 
  * @author jordi
  */
-public class HashSetEjercicio5 {
+public class HashSetEjercicio6 {
     public static void main(String[] args) {
         HashSet<Integer> conjunto1 = new HashSet<>();
         HashSet<Integer> conjunto2 = new HashSet<>();
@@ -32,12 +32,12 @@ public class HashSetEjercicio5 {
         conjunto1.add(2);
         conjunto1.add(3);
         
+        conjunto2.add(2);
+        conjunto2.add(3);
         conjunto2.add(4);
-        conjunto2.add(5);
-        conjunto2.add(6);
 
-        // Unión
-        conjunto1.addAll(conjunto2);
-        System.out.println("Unión: " + conjunto1);
+        // Diferencia
+        conjunto1.removeAll(conjunto2);
+        System.out.println("Diferencia: " + conjunto1);
     }
 }

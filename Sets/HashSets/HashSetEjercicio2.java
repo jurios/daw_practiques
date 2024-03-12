@@ -1,4 +1,4 @@
-package src.Sets.HashSets;
+package Sets.HashSets;
 
 
 import java.util.ArrayList;

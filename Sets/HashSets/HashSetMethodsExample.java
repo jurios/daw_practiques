@@ -1,4 +1,4 @@
-package src.Sets.HashSets;
+package Sets.HashSets;
 
 
 import java.util.HashSet;
@@ -16,33 +16,31 @@ import java.util.LinkedList;
  */
 public class HashSetMethodsExample {
     public static void main(String[] args) {
-        // Crear una LinkedList para la lista de la compra
         HashSet<String> set = new HashSet<>();
 
-        // Adding elements
+        // Añadir elementos
         set.add("Ada");
         set.add("Ritchie");
         set.add("Turing");
-        
+
         System.out.println("Imprimiendo el set inicial :" + set);
 
-        // Attempt to add a duplicate element
+        // Añadir un valor repetido
         set.add("Turing");
         System.out.println("Imprimiendo el set después de añadir, de nuevo, a Turing : " + set);
-        
+
         set.add(null);
         set.add(null);
         System.out.println("Imprimiendo el set después de añadir dos veces null : " + set);
 
-        // Removing an element
+        // Eliminar un elemento
         set.remove("Ritchie");
 
-        // Checking if a set contains an element
+        // Comprobar si existe un elemento
         System.out.println("El set contiene a Turing? " + set.contains("Turing"));
         System.out.println("El set contiene a Linus? " + set.contains("Linus"));
 
         System.out.print("Iterando sobre los elementos ");
-        // Iterating over elements
         for (String element : set) {
             System.out.print(element + ", ");
         }

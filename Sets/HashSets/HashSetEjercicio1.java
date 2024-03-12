@@ -1,11 +1,8 @@
-package src.Sets.HashSets;
+package Sets.HashSets;
 
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -14,17 +11,17 @@ import java.util.List;
 
 /**
  * Optimización de operaciones
- * 
+ *
  * Escribe un programa que compare los tiempos que tarda un ArrayList y un
  * HashSet en comprobar la existencia de un valor.
- * 
+ *
  * @author jordi
  */
 public class HashSetEjercicio1 {
     public static void main(String[] args) {
         // Número de valores a generar en la collection
         int numeroElementos = 1000000;
-        
+
         // El valor a comprobar existencia. Seleccionaremos el último para
         // obtener los valores en el peor de los casos (en el ArrayList debe
         // recorrer toda la lista)
@@ -53,7 +50,7 @@ public class HashSetEjercicio1 {
 
         System.out.println("Existe en ArrayList? " + existsInArrayList);
         System.out.println("Existe en ArrayList? " + existsInHashSet);
-        
+
         // Print the results
         System.out.println("Tiempo que tarda en detectar la existencia in ArrayList: " + durationArrayList + " nanoseconds");
         System.out.println("Tiempo que tarda en detectar la existencia del HashSet: " + durationHashSet + " nanoseconds");

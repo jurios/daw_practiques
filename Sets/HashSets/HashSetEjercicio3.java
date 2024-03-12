@@ -1,4 +1,4 @@
-package src.Sets.HashSets;
+package Sets.HashSets;
 
 
 import java.util.ArrayList;
@@ -14,15 +14,15 @@ import java.util.List;
  */
 
 /**
- * Diferencia de Conjuntos
+ * Intersección de conjuntos
  * 
- * Escribe un programa que dados dos conjuntos de números enteros 
- * encuentre la diferencia del primer conjunto respecto al segundo, es decir, 
- * los elementos que están en el primer conjunto y no en el segundo.
+ * Escribe un programa que defina dos conjuntos de números enteros y 
+ * encuentre su intersección, es decir, los elementos que se encuentran 
+ * en ambos conjuntos.
  * 
  * @author jordi
  */
-public class HashSetEjercicio6 {
+public class HashSetEjercicio3 {
     public static void main(String[] args) {
         HashSet<Integer> conjunto1 = new HashSet<>();
         HashSet<Integer> conjunto2 = new HashSet<>();
@@ -36,8 +36,8 @@ public class HashSetEjercicio6 {
         conjunto2.add(3);
         conjunto2.add(4);
 
-        // Diferencia
-        conjunto1.removeAll(conjunto2);
-        System.out.println("Diferencia: " + conjunto1);
+        // Intersección
+        conjunto1.retainAll(conjunto2);
+        System.out.println("Intersección: " + conjunto1);
     }
 }

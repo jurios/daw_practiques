@@ -1,4 +1,4 @@
-package src.Sets.HashSets;
+package Sets.HashSets;
 
 
 import java.util.ArrayList;
@@ -14,15 +14,15 @@ import java.util.List;
  */
 
 /**
- * Intersección de conjuntos
+ * Unión de conjuntos
  * 
- * Escribe un programa que defina dos conjuntos de números enteros y 
- * encuentre su intersección, es decir, los elementos que se encuentran 
- * en ambos conjuntos.
+ * Escribe un programa que dados dos conjuntos de números enteros 
+ * encuentre su unión, es decir, todos los elementos que están en cualquiera 
+ * de los dos conjuntos.
  * 
  * @author jordi
  */
-public class HashSetEjercicio3 {
+public class HashSetEjercicio5 {
     public static void main(String[] args) {
         HashSet<Integer> conjunto1 = new HashSet<>();
         HashSet<Integer> conjunto2 = new HashSet<>();
@@ -32,12 +32,12 @@ public class HashSetEjercicio3 {
         conjunto1.add(2);
         conjunto1.add(3);
         
-        conjunto2.add(2);
-        conjunto2.add(3);
         conjunto2.add(4);
+        conjunto2.add(5);
+        conjunto2.add(6);
 
-        // Intersección
-        conjunto1.retainAll(conjunto2);
-        System.out.println("Intersección: " + conjunto1);
+        // Unión
+        conjunto1.addAll(conjunto2);
+        System.out.println("Unión: " + conjunto1);
     }
 }
