@@ -1,3 +1,5 @@
+package src.Lists.ArrayLists;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -33,7 +35,7 @@ import java.util.Comparator;
  * 
  * @author jordi
  */
-public class ArrayListEjercicio2 {
+public class ArrayListEjercicio1 {
     private static final String PATH = "./src";
     
             
