@@ -1,12 +1,7 @@
 package Sets.HashSets;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -15,10 +10,10 @@ import java.util.List;
 
 /**
  * Detección de subconjuntos
- * 
- * Escribe un programa en que dado dos conjuntos, compruebe si el primer 
+ *
+ * Escribe un programa en que dado dos conjuntos, compruebe si el primer
  * conjunto es subconjunto del segundo.
- * 
+ *
  * @author jordi
  */
 public class HashSetEjercicio4 {
@@ -29,7 +24,7 @@ public class HashSetEjercicio4 {
         // Añadiendo elementos
         conjunto1.add(1);
         conjunto1.add(2);
-        
+
         conjunto2.add(1);
         conjunto2.add(2);
         conjunto2.add(3);

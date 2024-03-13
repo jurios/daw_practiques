@@ -2,8 +2,6 @@ package Sets.HashSets;
 
 
 import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license

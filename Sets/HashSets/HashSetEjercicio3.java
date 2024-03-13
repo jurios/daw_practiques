@@ -1,12 +1,8 @@
 package Sets.HashSets;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -15,11 +11,11 @@ import java.util.List;
 
 /**
  * Intersección de conjuntos
- * 
- * Escribe un programa que defina dos conjuntos de números enteros y 
- * encuentre su intersección, es decir, los elementos que se encuentran 
+ *
+ * Escribe un programa que defina dos conjuntos de números enteros y
+ * encuentre su intersección, es decir, los elementos que se encuentran
  * en ambos conjuntos.
- * 
+ *
  * @author jordi
  */
 public class HashSetEjercicio3 {
@@ -31,7 +27,7 @@ public class HashSetEjercicio3 {
         conjunto1.add(1);
         conjunto1.add(2);
         conjunto1.add(3);
-        
+
         conjunto2.add(2);
         conjunto2.add(3);
         conjunto2.add(4);

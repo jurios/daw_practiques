@@ -2,9 +2,7 @@ package Lists.ArrayLists;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
-import java.util.List;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -27,10 +25,10 @@ public class ArrayListMethodsExample {
 
         ArrayList<String> verduras = new ArrayList<>();
         listaCompra.add("Tomate"); // Añade al final
-        listaCompra.add("Lechuga"); // Añade al final
-        listaCompra.add("Cebolla"); // Añade al final
-        
-        
+        listaCompra.add("Lechuga");
+        listaCompra.add("Cebolla");
+
+        //Concatena la lista de verduras en la posición 1
         listaCompra.addAll(1, verduras);
         System.out.println("Después de añadir verduras: " + listaCompra);
 

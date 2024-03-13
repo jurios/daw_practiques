@@ -79,14 +79,33 @@ public class LinkedListEjercicio1 {
 
     private static LinkedList<String> leerTareas(String nombreFichero) {
         LinkedList<String> tareas = new LinkedList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(nombreFichero))) {
-            String tarea;
-            while ((tarea = br.readLine()) != null) {
-                tareas.add(tarea);
+
+        FileReader fr;
+        BufferedReader br;
+
+        try {
+            fr = new FileReader(nombreFichero);
+
+            try {
+                br = new BufferedReader(fr);
+
+                String tarea;
+                while ((tarea = br.readLine()) != null) {
+                    tareas.add(tarea);
+                }
+
+                br.close();
+
+            } catch (IOException e) {
+                System.out.println("Error al leer en el fichero: " + e.getMessage());
             }
+
+            fr.close();
+
         } catch (IOException e) {
-            System.out.println("Error al leer el fichero: " + e.getMessage());
+            System.out.println("Error al leer en el fichero: " + e.getMessage());
         }
+
         return tareas;
     }
 

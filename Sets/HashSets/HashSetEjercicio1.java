@@ -22,8 +22,8 @@ public class HashSetEjercicio1 {
         // Número de valores a generar en la collection
         int numeroElementos = 1000000;
 
-        // El valor a comprobar existencia. Seleccionaremos el último para
-        // obtener los valores en el peor de los casos (en el ArrayList debe
+        // El valor a comprobar existencia. Seleccionaremos el último añadido
+        // para obtener los valores en el peor de los casos (en el ArrayList debe
         // recorrer toda la lista)
         int searchValue = numeroElementos - 1;
 

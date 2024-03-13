@@ -7,6 +7,8 @@ package Sets.TreeSets;
 import java.util.Comparator;
 
 /**
+ * Comparador que prioriza los pares sobre los impares
+ * (se utiliza en TreeSetEjercicio2)
  *
  * @author jordi
  */
